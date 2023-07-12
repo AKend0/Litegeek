@@ -1,0 +1,30 @@
+:root{
+  --font_raleway:'Raleway', sans-serif;
+  --timing: 0.3s;
+  --width-of-input: 30vw;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2A7AE4;
+  --border-radius: 1rem;
+  --after-border-radius: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_raleway);
+    font-size: 16px;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }

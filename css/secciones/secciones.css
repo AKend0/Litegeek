@@ -1,0 +1,15 @@
+.seccion{
+    padding: 0.5rem 10vw;
+}
+.seccion_cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.seccion__cabecera--Titulo{
+    font-weight: 300;
+}
+.a_style{
+    text-decoration: none;
+    color: var(--border-color);
+}

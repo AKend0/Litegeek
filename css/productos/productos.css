@@ -1,0 +1,17 @@
+.Productos{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.Productos__box--Container{
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+.Productos__box--Container--Img{
+    width: 176px;
+    height: 174px;
+}
+.Productos__title{
+    font-weight: 300;
+}

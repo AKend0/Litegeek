@@ -1,0 +1,38 @@
+.Banner__Principal{
+    position: relative;
+    text-align: center;
+}
+.Banner__Pincipal--portada{
+    height: 352px;
+    width: 100%;
+}
+.Banner__Pincipal--bloque{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+    gap: 1rem ;
+    position: absolute;
+    transform: translate(0%, -150%);
+    background-color: transparent;
+}
+.Banner__Pincipal--titulo{
+    background-color: transparent;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3rem;
+}
+.Banner__Pincipal--descripcion{
+    background-color: transparent;
+    font-weight: 300;
+    color: #ffffff;
+}
+.Banner__Pincipal--boton{
+    background-color:var(--border-color);
+    color:var(--input-bg);
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+    cursor: pointer;
+}
