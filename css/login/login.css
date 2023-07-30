@@ -1,5 +1,4 @@
 .section__login{
-    background-color: var(--fondo);
     display: flex;
     padding: 64px 0;
     justify-content: center;
