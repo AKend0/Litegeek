@@ -1,13 +1,16 @@
+/*CAMBIAR A GUMBROAD */
 :root{
   --font_raleway:'Raleway', sans-serif;
   --timing: 0.3s;
-  --width-of-input: 30vw;
-  --height-of-input: 40px;
+  --width-of-input: 50vw;
+  --height-of-input: 50px;
   --border-height: 2px;
   --input-bg: #fff;
   --border-color: #2A7AE4;
   --border-radius: 1rem;
   --after-border-radius: 1px;
+  --fondo:#F5F5F5;
+  --borde_pagina:0.5rem 9vw;
 }
 
 * {

@@ -1,32 +1,40 @@
 .cabecera{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #121212;
 }
 .Cabecera__container{
+    padding: 0 5vw;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 70%;
+}
+.logo{
+  height: 3vw;
+  width: auto;
+  min-height: 50px;
+  max-height: 150px;
 }
 /*-------BUSCADOR----------------------------------------------------------------*/
 
-.form button {
+.form_buscador button {
     border: none;
     background: none;
-    color: #8b8ba7;
+    color: #000000;
   }
   /* styling of whole input container */
-  .form {
+  .form_buscador {
     position: relative;
     width: var(--width-of-input);
     height: var(--height-of-input);
     display: flex;
     align-items: center;
     padding-inline: 0.8em;
-    border-radius: var(--border-radius);
-    transition: border-radius 0.5s ease;
-    background: var(--input-bg,#fff);
+    background: var(--fondo);
+    border: 2px solid #000;
   }
   /* styling of Input */
   .input {
@@ -38,30 +46,17 @@
     padding-block: 0.7em;
     border: none;
   }
-  /* styling of animated border */
-  .form:before {
-    content: "";
-    position: absolute;
-    background: var(--border-color);
-    transform: scaleX(0);
-    transform-origin: center;
-    width: 100%;
-    height: var(--border-height);
-    left: 0;
-    bottom: 0;
-    border-radius: px;
-    transition: transform var(--timing) ease;
-  }
   /* Hover on Input */
-  .form:focus-within {
+  .form_buscador:focus-within {
     border-radius: var(--after-border-radius);
   }
   
   input:focus {
     outline: none;
   }
+
   /* here is code of animated border */
-  .form:focus-within:before {
+  .form_buscador:focus-within:before {
     transform: scale(1);
   }
   /* styling of close button */
@@ -78,25 +73,23 @@
     visibility: visible;
   }
   /* sizing svg icons */
-  .form svg {
+  .form_buscador svg {
     width: 17px;
     margin-top: 3px;
   }
-  /*-------BOTON <LOGIN----------------------------------------------------------------*/
-  .login  {
-    background-color: var(--input-bg);
-    color: var(--border-color);
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    width: 100px;
-    height: 45px;
-    transition: .3s;
-    cursor: pointer;
-  }
   
-  .login:hover {
-    background-color:var(--border-color);
-    box-shadow: 0 0 0 5px #3b83f65f;
-    color:var(--input-bg);
+  .login__Buttom{
+    background: var(--input-bg);
+    display: flex;
+    height: 70px;
+    width: 15%;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-left: 2px solid #121212;
+    font-weight: 700;
   }
-  
+  .login__Buttom:hover{
+    background-color: aqua;
+  }

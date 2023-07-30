@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Boton/botones.css">
+
     <link rel="stylesheet" href="css/header/header.css">
     <link rel="stylesheet" href="css/banner/banner.css">
     <link rel="stylesheet" href="css/secciones/secciones.css">
@@ -19,8 +19,8 @@
 <body>
     <header class="cabecera">
         <div class="Cabecera__container">
-            <img src="material/images/Logo.png" alt="Logo" class="logo">
-              <form class="form">
+            <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
+              <form class="form_buscador">
                     <button>
                         <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
                             <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -34,23 +34,30 @@
                     </button>
                 </form>
         </div>
-        <button class="login" onclick="window.location.href = 'Login.html'">
+        <button class="login__Buttom" onclick="window.location.href = 'Login.html'">
             Login
-          </button>
+        </button>
+          
     </header>
     <main class="main">
         <section class="Banner__Pincipal">
-            <img src="material/images/banner.webp" alt="Portada Principal" class="Banner__Pincipal--portada">
+            <div class="Banner__Pincipal--imagen">
+                <img src="material/images/banner.webp" alt="Portada Principal" class="Banner__Pincipal--portada">
+            </div>
             <div class="Banner__Pincipal--bloque">
-                <p class="Banner__Pincipal--titulo">Febrero Promocional</p>
-                <p class="Banner__Pincipal--descripcion">Productos seleccionados con 33% de descuento</p>
-                <button class="Banner__Pincipal--boton " type="button">Ver consolas</button>
+                <div class="Banner__Pincipal--contenido">
+                    <h1 class="Banner__Pincipal--titulo">Febrero Promocional</h1>
+                    <h2 class="Banner__Pincipal--descripcion">Productos seleccionados con 33% de descuento</h2>
+                    <button class="Banner__Pincipal--boton " type="button">Ver consolas</button>
+                </div>
             </div>
         </section>
-        <section class="Seccion__Starwars seccion">
+        <section class="Seccion__Starwars seccion" id="starwars">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo"> Starwars</p>
-                <a href="#" class="a_style">Ver todo -></a>
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                    Ver Todo
+                </button>
             </div>
             
             <div class="Productos">
@@ -59,7 +66,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw1.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -68,7 +77,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw2.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -77,7 +88,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw3.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -87,7 +100,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw4.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -96,7 +111,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw5.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -105,15 +122,19 @@
                             <img class="Productos__box--Container--Img"  src="material/images/sw6.webp" alt="Starwars">
                             <h2 class="Productos__title">Producto XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
             </div>
         </section>
-        <section class="Seccion__Consolas seccion">
+        <section class="Seccion__Consolas seccion" id="consolas">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo"> Consolas</p>
-                <a href="#" class="a_style">Ver todo -></a>
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                    Ver Todo
+                </button>
             </div>
             
             <div class="Productos">
@@ -122,7 +143,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c1.webp" alt="Consolas">
                             <h2 class="Productos__title">Control XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -130,7 +153,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c2.webp" alt="Consolas">
                             <h2 class="Productos__title">Control y consola XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -138,7 +163,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c3.webp" alt="Consolas">
                             <h2 class="Productos__title">Consola XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -146,7 +173,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c4.webp" alt="Consolas">
                             <h2 class="Productos__title">Control XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
 
@@ -155,7 +184,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c5.webp" alt="Consolas">
                             <h2 class="Productos__title">Consola XYZ</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -163,15 +194,19 @@
                             <img class="Productos__box--Container--Img"  src="material/images/c6.webp" alt="Consolas">
                             <h2 class="Productos__title">Game Boy Color</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
             </div>
         </section>
-        <section class="Seccion__Diversos seccion">
+        <section class="Seccion__Diversos seccion" id="diversos">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo">Diversos</p>
-                <a href="#" class="a_style">Ver todo -></a>
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                    Ver Todo
+                </button>
             </div>
             
             <div class="Productos">
@@ -180,7 +215,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d1.webp" alt="Consolas">
                             <h2 class="Productos__title">Camisa Atari</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -188,7 +225,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d2.webp" alt="Consolas">
                             <h2 class="Productos__title">Camisa SNES</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -196,7 +235,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d3.webp" alt="Consolas">
                             <h2 class="Productos__title">Sonic</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -204,7 +245,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d4.webp" alt="Consolas">
                             <h2 class="Productos__title">Reloj retro</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -212,7 +255,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d5.webp" alt="Consolas">
                             <h2 class="Productos__title">Realidad Virtual</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
                     <div class="Productos__box">
@@ -220,7 +265,9 @@
                             <img class="Productos__box--Container--Img"  src="material/images/d6.webp" alt="Consolas">
                             <h2 class="Productos__title">Pikachu</h2>
                             <h3 class="Productos__price">$60</h3>
-                            <Span><a href="#" class="a_style">Ver Producto</a></Span>
+                            <button class="Producto--boton" onclick="window.location.href = '#'">
+                                Ver Producto
+                            </button>
                         </ul>
                     </div>
             </div>
@@ -251,7 +298,7 @@
                   <textarea placeholder="Escribe Aqui" id="comment" name="comment" rows="5" required=""></textarea>
               
               </div>
-                  <button type="submit" class="login">Enviar</button>
+                  <button type="submit" class="Contact__Buttom">Enviar</button>
                 </form>
               </div>
               

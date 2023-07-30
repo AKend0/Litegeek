@@ -6,29 +6,25 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/login/login.css">
     <link rel="stylesheet" href="css/formulario/formulario.css">
     <link rel="stylesheet" href="css/footer/footer.css">
 </head>
 <body>
     <header class="cabecera">
         <div class="Cabecera__container">
-            <img src="material/images/Logo.png" alt="Logo" class="logo">
-              <form class="form">
-                    <button>
-                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
-                    <input class="input" placeholder="Que estas buscando?" required="" type="text">
-                    <button class="reset" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </form>
+            <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
         </div>
     </header>
     <main>
+        <section class="section__login">
+            <form class="form__login">
+                <p class="form__login--heading">Iniciar Sesion</p>
+                <input class="form__login--input" placeholder="Usuario" type="text">
+                <input class="form__login--input" placeholder="Contraseña" type="text"> 
+                <button class="form__login--buttom">Entrar</button>
+            </form>
+        </section>
         <section class="Seccion__Formulario">
             <div class="Seccion__Formulario--container">
             <img src="material/images/Logo.png" alt="Logo" class="logo">
@@ -55,7 +51,7 @@
                   <textarea placeholder="Escribe Aqui" id="comment" name="comment" rows="5" required=""></textarea>
               
               </div>
-                  <button type="submit" class="login">Enviar</button>
+                  <button type="submit" class="Contact__Buttom">Enviar</button>
                 </form>
               </div>
               

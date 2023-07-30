@@ -1,5 +1,5 @@
 .seccion{
-    padding: 0.5rem 10vw;
+    padding: var(--borde_pagina);
 }
 .seccion_cabecera{
     display: flex;
@@ -7,9 +7,36 @@
     padding-bottom: 1rem;
 }
 .seccion__cabecera--Titulo{
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
-.a_style{
-    text-decoration: none;
-    color: var(--border-color);
+.seccion_cabecera--Boton {
+    background: aqua;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+  }
+  
+  .seccion_cabecera--Boton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  .seccion_cabecera--Boton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+/*---------TODOS LOSPROUCTOS----*/
+.todoProducto{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.seccion_todoProducto{
+    padding-top: 64px ;
+    padding-bottom: 64px;
+    background-color: var(--fondo);
 }
