@@ -1,6 +1,6 @@
-const listaClientes = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+const listaClientes = () => fetch("https://64c83ebfa1fe0128fbd5b9a9.mockapi.io/producto").then((respuesta) => respuesta.json());
 const crearCliente=(nombre,categoria,url,descripcion,precio)=>{
- return fetch("http://localhost:3000/productos",{
+ return fetch("https://64c83ebfa1fe0128fbd5b9a9.mockapi.io/producto",{
   method:"POST",
   headers:{
     "Content-Type": "application/json"

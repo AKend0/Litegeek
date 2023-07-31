@@ -38,4 +38,5 @@ clientServices.listaClientes()
   .catch((error) => {
     console.error("Error:", error); // Log the error for debugging
     alert("Ocurrió un error");
+    console.error(`Unknown category: ${categoria}`);
   });
