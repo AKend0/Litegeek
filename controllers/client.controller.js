@@ -1,0 +1,32 @@
+//backticks
+import { clientServices } from "../Service/client-service.js";
+const crearNuevoProducto =(nombre,categoria,url,precio)=>{
+const lineaProducto=document.createElement("div");
+const contenido=`                
+<div class="Productos__box">
+<ul class="Productos__box--Container">
+    <img class="Productos__box--Container--Img"  src="${url}" alt="${categoria}">
+    <h2 class="Productos__title">${nombre}</h2>
+    <h3 class="Productos__price">${precio}</h3>
+    <button class="Producto--boton" onclick="window.location.href = '#'">
+    Ver Producto
+    </button>
+</ul>
+</div>`
+lineaProducto.innerHTML= contenido;
+return lineaProducto;
+};
+const table = document.querySelector("[data-table]");
+clientServices
+  .listaClientes()
+  .then((data) => {
+    console.log("Data received:", data); // Check the data received from the server
+    data.forEach(({ nombre, categoria, url, precio }) => {
+      const nuevaLinea = crearNuevoProducto(nombre, categoria, url, precio);
+      table.appendChild(nuevaLinea);
+    });
+  })
+  .catch((error) => {
+    console.error("Error:", error); // Log the error for debugging
+    alert("Ocurrió un error");
+  });

@@ -11,6 +11,8 @@
     width: 15vw;
     height: 500px;
     border: 2px solid #121212;
+    max-width: 286px;
+    min-width:200px;
 }
 .Productos__box--Container{
     display: flex;
@@ -56,4 +58,7 @@
   .Producto--boton:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
+  }
+  .container div:nth-child(n+7) {
+    display: none;
   }

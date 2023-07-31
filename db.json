@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "nombre": "Steam Deck",
+      "categoria": "Consola",
+      "url": "https://i2-prod.mirror.co.uk/gaming/article30253771.ece/ALTERNATES/n615/0_Valve-steam-deck-review.jpg",
+      "descripcion": "consola portatil de videjuegos",
+      "precio": "300",
+      "id": "94f0f6f7-d2af-4e8f-a5c4-51a3da30c1fb"
+    },
+    {
+      "nombre": "Nintendo Switch",
+      "categoria": "Consola",
+      "url": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/10/04/16333476011563.jpg",
+      "descripcion": "La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable",
+      "precio": "1900",
+      "id": "e697025a-1a77-4242-bee7-b5029e45f19f"
+    },
+    {
+      "nombre": "Optimus Prime - TRANSFORMERS",
+      "categoria": "Diversos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Optimus_prime_bumblebee-1200x983.jpg/1024px-Optimus_prime_bumblebee-1200x983.jpg",
+      "descripcion": "protagonista principal de la franquicia Transformers",
+      "precio": "230",
+      "id": "bb0eb84f-ded8-4ad7-bf65-016d3160e1c1"
+    },
+    {
+      "nombre": "Bumblebee",
+      "categoria": "Diversos",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_654420-MPE51007997086_082022-O.webp",
+      "descripcion": "bumblebee",
+      "precio": "230",
+      "id": "eff53a11-468b-4b84-97b8-f91059e48915"
+    },
+    {
+      "nombre": "Mileniun falcon",
+      "categoria": "StarWars",
+      "url": "https://phantom.pe/media/catalog/product/cache/2d2e350e73065c0f42c90f0a12869353/7/5/75192_1.jpg",
+      "descripcion": "Star wars ",
+      "precio": "300",
+      "id": "0a8958df-ad01-4741-ae69-85aa3df2f21a"
+    }
+  ]
+}

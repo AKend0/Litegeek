@@ -20,6 +20,22 @@
 </header>
 <body>
     <main>
+        <section class="section__addProduct">
+            <form class="form__product" data-form>
+                <p class="form__login--heading">Agregar producto</p>
+                <input class="form__addProduct--input" placeholder="Nombre del producto " type="text" required data-nombre="">
+                  <select id="categoria" data-categoria>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="StarWars">Star wars</option>
+                        <option value="Consola">Consola</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
+                <input class="form__addProduct--input" placeholder="imagen del producto" type="text" required data-url> 
+                <input class="form__addProduct--input" placeholder="Desripcion del producto" type="text" required data-descripcion> 
+                <input class="form__addProduct--input" placeholder="Precio del producto" type="text" required data-precio> 
+                <button class="form__addProduct--buttom">Entrar</button>
+            </form>
+        </section>
         <section class="Seccion__Formulario">
             <div class="Seccion__Formulario--container">
             <img src="material/images/Logo.png" alt="Logo" class="logo">
@@ -52,6 +68,7 @@
           
     </section>
     </main>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="controllers/registro.controller.js"></script>
 </body>
 </html>
