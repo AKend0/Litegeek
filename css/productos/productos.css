@@ -1,35 +1,39 @@
 .Productos{
+  margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 
 }
 
 .Productos__box{
-    width: 200px;
-    height: 400px;
-    min-width: 150px;
-    max-width: 200px;
+    width: 300px;
+    height: 500px;
+    min-width: 250px;
+    max-width: 300px;
     border:1px solid black;
 }
 .Productos__box--Container{
     display: flex;
     flex-direction: column;
-    max-height: 400px;
+    height: 100%;
+    justify-content:space-between ;
 }
 .Productos__box--subcontenedorImg{
     width: auto; /* Ancho deseado del div */
-    height: 250px; /* Alto deseado del div */
+    height: 300px; /* Alto deseado del div */
     border-bottom: 1px solid;
     overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: rgb(32, 32, 32);
   }
 .Productos__box--Container--Img{
-    width: 100%; /* La imagen ocupará el 100% del ancho del div */
-    height: auto; /* La altura se ajustará proporcionalmente al ancho para mantener la relación de aspecto */
+    width: auto; /* La imagen ocupará el 100% del ancho del div */
+    height: 100%; /* La altura se ajustará proporcionalmente al ancho para mantener la relación de aspecto */
+
+
 }
 .Productos__box--subcontenedorProduct{
     padding: 1rem;
@@ -40,8 +44,8 @@
 .Productos__title{
     font-size: 20px;
     overflow: hidden;
-    height: 50px;
-    max-height: 50px;
+    height: 45px;
+    max-height: 45px;
 }
 .Productos__price{
     font-size: 18px;
@@ -49,25 +53,19 @@
     color: #007bff;
 }
 .Producto--boton {
-    background: #FBCA1F;
-    font-family: inherit;
+    background:white;
     width: auto;
     height: 30px;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
-    box-shadow: 0.1em 0.1em;
+    border:none;
+    border-top: 1px solid;
     cursor: pointer;
   }
   
   .Producto--boton:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+    background:aqua;
   }
-  
-  .Producto--boton:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-  }
-  .container div:nth-child(n+7) {
-    display: none;
+  .container div:nth-child(n+8) {
+    display: none ;
   }

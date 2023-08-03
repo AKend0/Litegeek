@@ -8,11 +8,16 @@
     background-color: blue;
     width: 50vw;
     height: 30rem;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
 
 }
 .Banner__Pincipal--portada{
     width: 100%;
-    height: 30rem;
+    height: auto;
 }
 .Banner__Pincipal--contenido{
     display: flex;
