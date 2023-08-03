@@ -5,12 +5,16 @@ const lineaProducto=document.createElement("div");
 const contenido=`                
 <div class="Productos__box">
 <ul class="Productos__box--Container">
-    <img class="Productos__box--Container--Img"  src="${url}" alt="${categoria}">
-    <h2 class="Productos__title">${nombre}</h2>
-    <h3 class="Productos__price">${precio}</h3>
-    <button class="Producto--boton" onclick="window.location.href = '#'">
-    Ver Producto
-    </button>
+<div class="Productos__box--subcontenedorImg">
+  <img class="Productos__box--Container--Img"  src="${url}" alt="${categoria}">
+  </div>
+  <div class="Productos__box--subcontenedorProduct">
+  <h2 class="Productos__title"> ${nombre}</h2>
+  <h3 class="Productos__price">Precio : ${precio}</h3>
+</div>
+  <button class="Producto--boton" onclick="window.location.href = '#'">
+  Ver Producto
+  </button>
 </ul>
 </div>`
 lineaProducto.innerHTML= contenido;
