@@ -40,3 +40,11 @@
     padding-bottom: 64px;
     background-color: var(--fondo);
 }
+@media (max-width:1000px) {
+  .seccion{
+    padding: 0 1rem;
+  }
+  .seccion_cabecera{
+    padding-top: 1rem;
+  }
+}

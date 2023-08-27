@@ -6,18 +6,19 @@
 }
 .Banner__Pincipal--imagen{
     background-color: blue;
-    width: 50vw;
+    width: 50%;
     height: 30rem;
     overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(32, 32, 32);
+    box-sizing: border-box;
 
 }
 .Banner__Pincipal--portada{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 .Banner__Pincipal--contenido{
     display: flex;
@@ -27,12 +28,13 @@
 }
 .Banner__Pincipal--bloque{
     background-color: aqua;
-    width: 50vw;
+    width: 50%;
     height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     
 }
 .Banner__Pincipal--titulo{
@@ -67,4 +69,31 @@
   .Banner__Pincipal--boton:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
+  }
+
+  @media (max-width:1000px) {
+    .Banner__Pincipal--imagen{
+        width: 100%;
+    }
+    .Banner__Pincipal{
+        flex-direction: column-reverse;
+    }
+    .Banner__Pincipal--bloque{
+        width: 100%;
+    }
+  }
+  .Banner__Pincipal--contenido{
+    margin:0 5rem
+}
+
+  @media (max-width:700px) {
+    .Banner__Pincipal--contenido h1{
+        font-size: 3rem;
+    }
+    .Banner__Pincipal--contenido h2{
+        font-size: 1.5rem;
+    }
+    .Banner__Pincipal--contenido{
+        margin:0 1rem
+    }
   }

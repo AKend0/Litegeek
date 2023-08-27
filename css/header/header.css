@@ -13,10 +13,9 @@
     width: 70%;
 }
 .logo{
-  height: 2rem;
+  height: 3rem;
   width: auto;
-  min-height: 50px;
-  max-height: 150px;
+
 }
 /*-------BUSCADOR----------------------------------------------------------------*/
 
@@ -92,4 +91,11 @@
   }
   .login__Buttom:hover{
     background-color: aqua;
+  }
+  @media (max-width:700px) {
+    .logo{
+      height: 1.5rem;
+      width: auto;
+    
+    }
   }
