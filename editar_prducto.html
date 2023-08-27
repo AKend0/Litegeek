@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/addProduct/addProduct.css">
+    <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+<header class="cabecera">
+    <div class="Cabecera__container">
+        <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
+    </div>
+    <button class="login__Buttom" onclick="window.location.href = 'productos.html'">
+        Menu Administrador
+      </button>
+</header>
+<body>
+    <main>
+        <section class="section__addProduct">
+            <form class="form__product" data-form>
+                <p class="form__login--heading">Editar producto</p>
+                <input class="form__addProduct--input" placeholder="Nombre del producto " type="text" required data-nombre="">
+                  <select id="categoria" class="form__addProduct--input" data-categoria>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="StarWars">Star wars</option>
+                        <option value="Consola">Consola</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
+                <input class="form__addProduct--input" placeholder="imagen del producto" type="text" required data-url> 
+                <input class="form__addProduct--input" placeholder="Desripcion del producto" type="text" required data-descripcion> 
+                <input class="form__addProduct--input" placeholder="Precio del producto" type="text" required data-precio> 
+                <button class="form__addProduct--buttom">Entrar</button>
+            </form>
+        </section>
+        <section class="Seccion__Formulario">
+            <div class="Seccion__Formulario--container">
+            <img src="material/images/Logo.png" alt="Logo" class="logo">
+            <ul class="info__container">
+                <li><a href="#" class="info__container--element">Quienes somos</a></li>
+                <li><a href="#" class="info__container--element">Politica de privacidad</a></li>
+                <li><a href="#" class="info__container--element">Nuestras tiendas</a></li>
+                <li><a href="#" class="info__container--element">Quiero ser Franquiciado</a></li>
+                <li><a href="#" class="info__container--element">Anuncie aqui</a></li>
+            </ul>
+            </div>
+            <div class="card">
+                <span class="title">Escribenos</span>
+                <form class="card_form">
+                <div class="group">
+                <input placeholder="Nombres" type="text" required="">
+            
+                </div>
+            <div class="group">
+                <input placeholder="Correo" type="email" id="email" name="email" required="">
+            
+                </div>
+            <div class="group">
+                <textarea placeholder="Escribe Aqui" id="comment" name="comment" rows="5" required=""></textarea>
+            
+            </div>
+                <button type="submit" class="Contact__Buttom">Enviar</button>
+                </form>
+            </div>
+          
+    </section>
+    </main>
+        <script type="module" src="controllers/actualizar_controller.js"></script>
+    </body>
+</html>

@@ -35,7 +35,7 @@ clientServices.listaClientes()
       if (categoryDiv) {
         categoryDiv.appendChild(nuevaLinea);
       } else {
-        console.error(`Unknown category: ${categoria}`);
+        console.error(`Unknown category: ${categoria},${nombre}`);
       }
     });
   })

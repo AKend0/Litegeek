@@ -49,8 +49,23 @@
     padding-top: 20px;
     color: #007bff;
 }
-.Producto--boton {
-    background:white;
+.Eliminar--boton {
+    background:rgb(255, 147, 147);
+    width: auto;
+    height: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    border:none;
+    border-top: 1px solid;
+    cursor: pointer;
+  }
+  
+  .Eliminar--boton:hover {
+    background:red;
+  }
+  .Producto--boton {
+    background:rgb(162, 255, 255);
+    ;
     width: auto;
     height: 30px;
     font-weight: 700;
@@ -75,7 +90,7 @@
       display: none ;
     }
   }
-  @media (max-width:700px) {
+  @media (max-width:500px) {
     .Productos{
       display: flex;
       flex-direction: column;
