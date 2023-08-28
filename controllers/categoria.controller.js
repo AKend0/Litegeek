@@ -3,7 +3,7 @@ import { clientServices } from "../Service/client-service.js";
 const crearNuevoProducto = (nombre, categoria, url, precio) => {
   const lineaProducto = document.createElement("div");
   const contenido = `
-  <div class="Productos__box">
+  <div class="Productos__box " id="divProducto">
   <ul class="Productos__box--Container">
   <div class="Productos__box--subcontenedorImg">
     <img class="Productos__box--Container--Img"  src="${url}" alt="${categoria}">

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/footer/footer.css">
 </head>
 <body>
-    <header class="cabecera">
+    <header class="cabecera" id="divProducto">
         <div class="Cabecera__container">
             <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
               <form class="form_buscador">
@@ -33,8 +33,10 @@
                         </svg>
                     </button>
                 </form>
+                
+                <input type="checkbox" class="theme-checkbox" id="toggleDarkMode">
         </div>
-        <button class="login__Buttom" onclick="window.location.href = 'Login.html'">
+        <button class="login__Buttom" onclick="window.location.href = 'Login.html'" id="divProducto">
             Login
         </button>
           
@@ -119,10 +121,12 @@
               </div>
               
         </section>
+ 
     </main>
     <footer class="footer seccion">
         <span class="footer__info">Desarrollado por Awekendo</span>
     </footer>
 </body>
 <script type="module" src="controllers/categoria.controller.js"></script>
+<script src="modo_oscuro.js"></script>
 </html>

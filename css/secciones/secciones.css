@@ -38,7 +38,7 @@
 .seccion_todoProducto{
     padding-top: 64px ;
     padding-bottom: 64px;
-    background-color: var(--fondo);
+
 }
 @media (max-width:1000px) {
   .seccion{

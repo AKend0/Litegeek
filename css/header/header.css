@@ -78,7 +78,7 @@
   }
   
   .login__Buttom{
-    background: var(--input-bg);
+    background: none;
     display: flex;
     height: 70px;
     width: 15%;
