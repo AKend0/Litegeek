@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Producto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/addProduct/addProduct.css">
-    <link rel="stylesheet" href="css/formulario/formulario.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header/header.css">
+    <link rel="stylesheet" href="../css/addProduct/addProduct.css">
+    <link rel="stylesheet" href="../css/formulario/formulario.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
 </head>
-<header class="cabecera">
+<header class="cabecera" id="divProducto">
     <div class="Cabecera__container">
-        <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
+        <a href="index.html"><img src="../material/images/Logo.png" alt="Logo" class="logo"></a>
     </div>
-    <button class="login__Buttom" onclick="window.location.href = 'productos.html'">
-        Menu Administrador
+    <input type="checkbox" class="theme-checkbox" id="toggleDarkMode">
+    <button class="login__Buttom" onclick="window.location.href = 'productos.html'" id="divProducto">
+        Volver a Productos
       </button>
+      
 </header>
 <body>
     <main>
         <section class="section__addProduct">
             <form class="form__product" data-form>
-                <p class="form__login--heading">Editar producto</p>
+                <p class="form__login--heading">Agregar producto</p>
                 <input class="form__addProduct--input" placeholder="Nombre del producto " type="text" required data-nombre="">
                   <select id="categoria" class="form__addProduct--input" data-categoria>
                         <option value="">Seleccione una categoría</option>
@@ -33,12 +35,12 @@
                 <input class="form__addProduct--input" placeholder="imagen del producto" type="text" required data-url> 
                 <input class="form__addProduct--input" placeholder="Desripcion del producto" type="text" required data-descripcion> 
                 <input class="form__addProduct--input" placeholder="Precio del producto" type="text" required data-precio> 
-                <button class="form__addProduct--buttom">Guardar</button>
+                <button class="form__addProduct--buttom">Crear</button>
             </form>
         </section>
         <section class="Seccion__Formulario">
             <div class="Seccion__Formulario--container">
-            <img src="material/images/Logo.png" alt="Logo" class="logo">
+            <img src="../material/images/Logo.png" alt="Logo" class="logo">
             <ul class="info__container">
                 <li><a href="#" class="info__container--element">Quienes somos</a></li>
                 <li><a href="#" class="info__container--element">Politica de privacidad</a></li>
@@ -68,7 +70,8 @@
           
     </section>
     </main>
-        <script type="module" src="controllers/actualizar_controller.js"></script>
-        <script src="modo_oscuro.js"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/registro.controller.js"></script>
+    <script src="../modo_oscuro.js"></script>
+</body>
 </html>

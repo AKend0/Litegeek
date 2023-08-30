@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/banner/banner.css">
-    <link rel="stylesheet" href="css/secciones/secciones.css">
-    <link rel="stylesheet" href="css/productos/productos.css">
-    <link rel="stylesheet" href="css/formulario/formulario.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="../css/header/header.css">
+    <link rel="stylesheet" href="../css/banner/banner.css">
+    <link rel="stylesheet" href="../css/secciones/secciones.css">
+    <link rel="stylesheet" href="../css/productos/productos.css">
+    <link rel="stylesheet" href="../css/formulario/formulario.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
 </head>
 <body>
     <header class="cabecera" id="divProducto">
         <div class="Cabecera__container">
-            <a href="index.html"><img src="material/images/Logo.png" alt="Logo" class="logo"></a>
+            <a href="../views/index.html"><img src="../material/images/Logo.png" alt="Logo" class="logo"></a>
               <form class="form_buscador">
                     <button>
                         <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
@@ -36,7 +36,7 @@
                 
                 <input type="checkbox" class="theme-checkbox" id="toggleDarkMode">
         </div>
-        <button class="login__Buttom" onclick="window.location.href = 'Login.html'" id="divProducto">
+        <button class="login__Buttom" onclick="window.location.href = '../views/Login.html'" id="divProducto">
             Login
         </button>
           
@@ -57,7 +57,7 @@
         <section class="Seccion__Starwars seccion" id="starwars">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo"> Starwars</p>
-                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../views/productos.html'">
                     Ver Todo
                 </button>
             </div>
@@ -69,7 +69,7 @@
         <section class="Seccion__Consolas seccion" id="consolas">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo"> Consolas</p>
-                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../views/productos.html'">
                     Ver Todo
                 </button>
             </div>
@@ -81,7 +81,7 @@
         <section class="Seccion__Diversos seccion" id="diversos">
             <div class="seccion_cabecera">
                 <p class="seccion__cabecera--Titulo">Diversos</p>
-                <button class="seccion_cabecera--Boton" onclick="window.location.href = '../productos.html'">
+                <button class="seccion_cabecera--Boton" onclick="window.location.href = '.../views/productos.html'">
                     Ver Todo
                 </button>
             </div>
@@ -92,7 +92,7 @@
         </section>
         <section class="Seccion__Formulario">
             <div class="Seccion__Formulario--container">
-            <img src="material/images/Logo.png" alt="Logo" class="logo">
+            <img src="../material/images/Logo.png" alt="Logo" class="logo">
             <ul class="info__container">
                 <li><a href="#" class="info__container--element">Quienes somos</a></li>
                 <li><a href="#" class="info__container--element">Politica de privacidad</a></li>
@@ -127,6 +127,6 @@
         <span class="footer__info">Desarrollado por Awekendo</span>
     </footer>
 </body>
-<script type="module" src="controllers/categoria.controller.js"></script>
-<script src="modo_oscuro.js"></script>
+<script type="module" src="../controllers/categoria.controller.js"></script>
+<script src="../modo_oscuro.js"></script>
 </html>
